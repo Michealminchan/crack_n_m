@@ -1,5 +1,7 @@
 #+title: crack_n_m
 
+Password cracking with MPI and pthreads
+
 * Usage
 
 Compile
