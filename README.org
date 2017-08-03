@@ -1,0 +1,22 @@
+#+title: crack_n_m
+
+* Usage
+
+Compile
+#+begin_example
+$ cc -o crack_n_m crack_n_m.c -lrt -pthread -lcrypt -lm
+#+end_example
+
+Display usage information
+#+begin_example
+$ ./crack_n_m -h 
+#+end_example
+
+Use =p=20= partitions and threads, on file storing =m=100= passwords, each having length of =n=96=.
+#+begin_example
+$ ./crack_n_m -s0 -p 2 -f ./data/26_3_100.txt -a"abcdefghijklmnopqrstuvwxyz" -m 100 -n 96
+#+end_example
+
+* License
+
+This is free and unencumbered software released into the public domain. For more information, please refer to the [[./LICENSE][LICENSE]] file.
